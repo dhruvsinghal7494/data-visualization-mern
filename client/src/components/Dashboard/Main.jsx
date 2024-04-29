@@ -21,7 +21,7 @@ const Main = () => {
 
   useEffect(() => {
     const fetchDataFromApi = async () => {
-      const API_URL = "http://localhost:5001";
+      const API_URL = "http://localhost:5000";
       try {
         const response = await axios.get(`${API_URL}/data`);
         setData(response.data);
